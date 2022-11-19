@@ -5,12 +5,16 @@ public class ArticleVO {
     private String subject;
     private String description;
     private String author;
+    private String tag;
 
-    public ArticleVO(int articleNo, String subject, String description, String author) {
+
+
+    public ArticleVO(int articleNo, String subject, String description, String author,String tag) {
         this.articleNo = articleNo;
         this.subject = subject;
         this.description = description;
         this.author = author;
+        this.tag=tag;
     }
 
     public int getArticleNo() {
@@ -43,6 +47,13 @@ public class ArticleVO {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 
 
