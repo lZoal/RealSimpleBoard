@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spner">
+        <item>IT</item>
+        <item>항공</item>
+        <item>농업</item>
+    </string-array>
+</resources>

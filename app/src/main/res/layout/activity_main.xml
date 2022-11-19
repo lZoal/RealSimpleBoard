@@ -9,17 +9,34 @@
     tools:context=".MainActivity">
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-42dp"
-        tools:layout_editor_absoluteY="73dp">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="411dp"
+        android:layout_height="64dp">
 
-        <LinearLayout
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/listView"/>
+            android:contentDescription="@string/app_name"
+            android:minHeight="30dp"
+            android:paddingRight="30dp"
+            android:background="#2540ff"
+            android:spinnerMode="dialog"
+            tools:ignore="MissingConstraints" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <ScrollView
+        android:layout_width="414dp"
+        android:layout_height="814dp"
+        android:contentDescription="@string/app_name"
+        tools:layout_editor_absoluteY="32dp">
+
+        <LinearLayout
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
